@@ -18,7 +18,7 @@ function NewMarker() {
   const [position, setPosition] = useState<L.LatLng | null>(null);
   const [obstacleType, setObstacleType] = useState("");
   const [draggable, setDraggable] = useState(false);
-  const markerRef = useRef(null);
+  const markerRef = useRef<L.Marker | null>(null);
 
   const eventHandlers = useMemo(
     () => ({
