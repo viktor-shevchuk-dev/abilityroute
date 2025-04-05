@@ -8,13 +8,11 @@ import {
   MapContainer,
   Marker,
   Popup,
-  SVGOverlay,
   TileLayer,
   Tooltip,
-  useMap,
   useMapEvents,
 } from "react-leaflet";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 
 function NewMarker() {
   const [position, setPosition] = useState<L.LatLng | null>(null);
